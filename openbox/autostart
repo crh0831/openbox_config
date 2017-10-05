@@ -1,0 +1,38 @@
+# Programs that will run after Openbox has started
+
+# Set the wallpaper
+nitrogen --restore &
+
+# Run a Composite manager
+# xcompmgr -c -t-5 -l-5 -r4.2 -o.55 &
+/usr/bin/compton &
+
+# Redshift
+/usr/bin/redshift &
+
+# Startup Conky after a delay
+~/conky.sh &
+
+# A Launcher
+/usr/bin/synapse &
+
+# Guake-like Terminal
+tilda &
+
+# Xscreensaver so I can run XJack!
+xscreensaver -no-splash &
+
+# Kill Capslock Key
+setxkbmap -option ctrl:nocaps &
+
+# A panel for good times
+# tint2 -c $HOME/.config/tint2/tint2rc_clean &
+
+# Panel Items
+# (sleep 2 && /usr/bin/volumeicon) &
+# (sleep 2 && /usr/bin/xfce4-power-manager) &
+# (sleep 2 && /usr/bin/nm-applet --sm-disable) &
+
+# tint2 panel script
+/home/chawley/bin/tint2_restart
+
